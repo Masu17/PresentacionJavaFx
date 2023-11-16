@@ -54,6 +54,7 @@ public class MainAppController {
             alert.show();
 
             tablaDatos.setItems(data);
+
         }catch (Exception e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -72,7 +73,9 @@ public class MainAppController {
                 if (!((TextField) node).getText().isEmpty()){
                     row.add(textField.getText());
                     textField.setText("");
-                }else {
+                } else if (node instanceof  Button boton) {
+                    
+                } else {
                     throw new RuntimeException();
                 }
             }

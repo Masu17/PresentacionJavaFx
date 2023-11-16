@@ -10,8 +10,10 @@ import java.io.IOException;
 
 public class secondView {
 
+    //nuevo Stage
     private Stage secondStage;
 
+    //inicialización del nuevo Stage
     public void show() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("secondView.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
